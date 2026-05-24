@@ -1,5 +1,21 @@
 sudo apt update && sudo apt upgrade -y
 
+echo 'installing kubectl' 
+curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"  && \
+sudo chmod +x ./kubectl  && \
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+echo 'installing kubectx kubens' 
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx  && \
+sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx  && \
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+
+echo 'installing k9s' 
+curl -L "https://github.com/derailed/k9s/releases/download/v0.50.18/k9s_$(uname -s)_$(dpkg --print-architecture).tar.gz" -o k9s && \
+tar -xf k9s && \
+chmod +x k9s && \
+sudo mv ./k9s /usr/local/bin/k9s
+
 echo 'installing docker and docker-compose'
 sudo apt remove -y docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc || true
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -29,19 +45,3 @@ sudo systemctl enable docker
 sudo usermod -aG docker $USER
 
 newgrp docker
-
-echo 'installing kubectl' 
-curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
-sudo chmod +x ./kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
-
-echo 'installing kubectx kubens' 
-sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
-sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
-sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
-
-echo 'installing k9s' 
-curl -L "https://github.com/derailed/k9s/releases/download/v0.50.18/k9s_$(uname -s)_$(dpkg --print-architecture).tar.gz" -o k9s
-tar -xf k9s
-chmod +x k9s
-sudo mv ./k9s /usr/local/bin/k9s
