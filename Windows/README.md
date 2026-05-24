@@ -7,6 +7,10 @@ A collection of Windows scripts and documentation to install essential programs,
 - [README.md](https://github.com/seripj/OS/blob/main/Windows/graphic-card/README.md)
 - [Profile (RX6750XT_Profile.xml) to Undervolt](https://github.com/seripj/OS/blob/main/Windows/graphic-card/profiles/RX6750XT_Profile.xml)
 
+## Scritps to install program and tools
+
+- [tools-installer.ps1](https://github.com/seripj/OS/blob/main/Windows/powershell/tools-installer.ps1)
+
 ## Docs to fix issues
 
 - [Brave Browser Video Flickering Issue](https://github.com/seripj/OS/blob/main/Windows/docs/BRAVE-BROWSER-SETTINGS.md)
