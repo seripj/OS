@@ -34,13 +34,29 @@ chmod +x docker-tools.sh && \
 
 Script to build a Docker image and deploy it to Kubernetes:
 
-- See [the auto-deploy.sh](https://github.com/seripj/OS/blob/main/Linux/ubuntu-based/autp-deploy.sh)
+- See [the auto-deploy.sh](https://github.com/seripj/OS/blob/main/Linux/ubuntu-based/auto-deploy.sh)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/seripj/OS/refs/heads/main/Linux/ubuntu-based/auto-deploy.sh -o auto-deploy.sh && \
-chmod +x auto-deploy.sh && \
-./auto-deploy.sh
+curl -fsSL https://raw.githubusercontent.com/seripj/OS/refs/heads/main/Linux/ubuntu-based/auto-deploy.sh -o deploy.sh && \
+chmod +x deploy.sh && \
+sudo mv ./deploy.sh /usr/local/bin/deploy
 ```
+
+And to run the deployment (deploy):
+
+```bash
+deploy
+```
+
+> To deploy the backend API and target the development environment.
+
+Or pass params:
+
+```bash
+deploy --front --prod
+```
+
+> To deploy the frontend and target the staging or production environment.
 
 ---
 
