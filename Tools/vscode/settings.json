@@ -1,0 +1,102 @@
+{
+  "window.commandCenter": false,
+
+  // Workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.location": "top",
+  "workbench.layoutControl.enabled": false,
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Omni",
+  "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Terminal
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.title": "${sequence}",
+  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.env.windows": {},
+
+  // Editor
+  "breadcrumbs.enabled": true,
+
+  "editor.autoIndent": "full",
+  "editor.minimap.enabled": false,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 26,
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
+  "editor.renderLineHighlight": "gutter",
+  "editor.parameterHints.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Explorer
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+
+  // git e gitlens
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "gitlens.graph.layout": "editor",
+  "gitlens.graph.scrollMarkers.enabled": false,
+  "gitlens.graph.showDetailsView": false,
+  "gitlens.graph.highlightRowsOnRefHover": false,
+  "gitlens.graph.showGhostRefsOnRowHover": false,
+  "gitlens.graph.showUpstreamStatus": false,
+  "gitlens.graph.pullRequests.enabled": false,
+  "gitlens.graph.avatars": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "gitlens.showWhatsNewAfterUpgrades": false,
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.views.stashes.files.layout": "list",
+  "git.enableSmartCommit": true,
+
+  // security
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.allowedUNCHosts": ["wsl.localhost"],
+
+  //Others
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": false
+  },
+  "jst/ts.suggest.autoImports": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  }
+}

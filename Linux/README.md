@@ -30,6 +30,20 @@ chmod +x docker-tools.sh && \
 
 ---
 
+## Scripts
+
+Script to build a Docker image and deploy it to Kubernetes:
+
+- See [the auto-deploy.sh](https://github.com/seripj/OS/blob/main/Linux/ubuntu-based/autp-deploy.sh)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/seripj/OS/refs/heads/main/Linux/ubuntu-based/auto-deploy.sh -o auto-deploy.sh && \
+chmod +x auto-deploy.sh && \
+./auto-deploy.sh
+```
+
+---
+
 ## Docs to fix issues
 
 - [Fix `' + c` → `ç` on keyboard](https://github.com/seripj/OS/blob/main/Linux/docs/KEYBOARD-CONFIG.md)

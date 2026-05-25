@@ -2,6 +2,10 @@
 
 A collection of Linux and Windows scripts and documentation to install essential programs, development tools, configure system setup, and troubleshoot common issues.
 
+## Some documentation for Tools configuration and settings.
+
+- [README.md](https://github.com/seripj/OS/blob/main/Tools/README.md)
+
 ## Some documentation for Linux issues.
 
 - [README.md](https://github.com/seripj/OS/blob/main/Linux/README.md)
